@@ -25,7 +25,7 @@ if (empty($url)) {
 	    );
 }
 //一个简单的链接处理
-$url='https://www.lanzouf.com/'.explode('.com/',$url)['1'];
+//$url='https://www.lanzouf.com/'.explode('.com/',$url)['1'];
 $softInfo = MloocCurlGet($url);
 //判断文件链接是否失效
 if (strstr($softInfo, "文件取消分享了") != false) {
